@@ -52,7 +52,7 @@ This step uses the [`Hive Schema Tool`](https://cwiki.apache.org/confluence/disp
 
 1. Create a temporary HDInsight 4.0 cluster to access the 4.0 Hive `schematool`. You can use the [default Hive metastore](../hdinsight-use-external-metadata-stores.md#default-metastore) for this step.
 
-1. From the HDInsight 4.0 cluster, execute `schematool` to upgrade the target HDInsight 3.6 metastore:
+1. Establish an [ssh session](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-linux-use-ssh-unix) on HDInsight 4.0 cluster , execute `schematool` to upgrade the target HDInsight 3.6 metastore:
 
     ```sh
     SERVER='servername.database.windows.net'  # replace with your SQL Server
