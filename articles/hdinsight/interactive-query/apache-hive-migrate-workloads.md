@@ -45,7 +45,7 @@ Migration of Hive tables to a new Storage Account needs to be done as a separate
 
 ### 3. Upgrade the metastore schema
 
-This step uses the [`Hive Schema Tool`](https://cwiki.apache.org/confluence/display/Hive/Hive+Schema+Tool) from HDInsight 4.0 to upgrade the metastore schema.
+This step uses the [`Hive Schema Tool`](https://cwiki.apache.org/confluence/display/Hive/Hive+Schema+Tool) on HDInsight 4.0 to upgrade the metastore schema. To follow the steps below open [`ssh`](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-linux-use-ssh-unix) session on headnode:
 
 > [!Warning]
 > This step is not reversible. Run this only on a copy of the metastore.
