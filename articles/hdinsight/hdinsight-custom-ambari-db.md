@@ -41,6 +41,10 @@ When you host your Apache Ambari DB in an external database, remember the follow
 - You're responsible for the additional costs of the Azure SQL DB that holds Ambari.
 - Back up your custom Ambari DB periodically. Azure SQL Database generates backups automatically, but the backup retention time-frame varies. For more information, see [Learn about automatic SQL Database backups](../azure-sql/database/automated-backups-overview.md).
 
+>[!WARNING]
+>Please note that you may be able to change the database password on the Azure SQL Database hosting ambari database; however, it is not supported to change Azure SQL database password after you have attached the databse as ambari metastore to a running HDInsight cluster. 
+>
+
 ## Deploy clusters with a custom Ambari DB
 
 To create an HDInsight cluster that uses your own external Ambari database, use the [custom Ambari DB Quickstart template](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.hdinsight/hdinsight-custom-ambari-db).
